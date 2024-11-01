@@ -1,0 +1,58 @@
+/*
+ * wp-latest-photos default style
+ * Author: Andrew Mihaylov
+ * URI: http://www.codeispoetry.ru/
+ * $Id: default.css 197935 2010-01-25 16:12:27Z andddd $
+ */
+
+.wp-latestphotos {
+     margin: 5px 0;
+     padding: 0;
+}
+
+.wp-latestphotos li {
+    list-style: none;
+    margin: 2px;
+    padding: 0;
+    float: left;
+    border: 0;
+}
+
+#menu .wp-latestphotos li a:hover, /* for classic wp theme :D */
+.wp-latestphotos li a,
+.wp-latestphotos li a:hover
+{
+    border: 0;
+    text-decoration: none;
+}
+
+.wp-latestphotos li a img {
+    border: 1px solid #d0d0d0;
+    padding: 2px;
+    margin: 0;
+}
+
+.wp-latestphotos li a:hover img {
+    border: 1px solid #222;
+}
+
+.wp-latestphotos:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.wp-latestphotos {
+    display: inline-block;
+}
+
+html[xmlns] .wp-latestphotos {
+    display: block;
+}
+
+* html .wp-latestphotos {
+    height: 1%;
+}
